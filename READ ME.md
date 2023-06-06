@@ -17,7 +17,7 @@
     cd client
     npm start //for client 
 
-## information for login
+## Information for start
 
     Of course, you can Sign Up and Log In.
     And then the chrome will go to Dashboard.
