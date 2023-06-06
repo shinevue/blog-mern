@@ -9,7 +9,7 @@
     MongoDB
     Express
     Node JS
-## installation
+## Installation
     
 ## Getting Start
 
