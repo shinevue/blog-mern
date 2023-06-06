@@ -19,11 +19,7 @@
 
 ## information for login
 
-Of course, you can Sign Up and Log In.
-If you want main project than login, you can login with:
-    email: shine@gmail.com
-    password: asdfasdf
- 
+    Of course, you can Sign Up and Log In.
     And then the chrome will go to Dashboard.
   ###  You can watch all blog.                                          ----READ
     And at Navbar there is "My Blog".
