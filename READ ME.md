@@ -36,40 +36,14 @@ If you want main project than login, you can login with:
 
     In either dashboard and myblog, you can increase watches and likes  ----WATCH & LKIES
 
+## Features
+    - implement simple login screen(email, full name, password)
+    - create a dashboard page to show all blogs as a list
+    - implement create blog page to create a new blog
+    - implement update page to update content of the blog
+    - implement blog detail page to show all contents of the blog
+    - increase watches when users visit a blog page(except creator)
+    - increase likes when users click like button on the blog page
+    - implement user page which contains all blogs created by that user
+    - connect to backend
 
-
-
-
-
-
-
-
-
-
-
-Features
-- implement simple login screen(email, full name, password)
-- create a dashboard page to show all blogs as a list
-- implement create blog page to create a new blog
-- implement update page to update content of the blog
-- implement blog detail page to show all contents of the blog
-- increase watches when users visit a blog page(except creator)
-- increase likes when users click like button on the blog page
-
-you can use localStorage for the data storage on the client side.
-
-Additional Features
-- add sort/filter feature to the dashboard page(recent, likes, watches)
-- add a form element for uploading a file
-- implement user page which contains all blogs created by that user
-- connect to backend
-
-It's good to implement additional features if you have time.
-Deadline: submit the result in the next Monday morning
-
-Nice to have
-- implement react context
-- clean code architecture
-- use modern react features
-- clean UI
-- responsiveness & contrast design
