@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 exports.register = async (req, res) => {
   const { name, email, password, confirm } = req.body;
   const isvalied = User.findOne({ email: email });
-  console.log(isvalied);
+  // console.log(isvalied);
   if (!isvalied.name) {
     const salt = await bcrypt.genSalt(10);
     const hashedpassword = await bcrypt.hash(password, salt);
@@ -30,7 +30,6 @@ exports.register = async (req, res) => {
   }
 };
 exports.login = async (req, res) => {
-  console.log(req.body);
   const { email, password } = req.body;
   const user = await User.findOne({ email: email });
   if (user && (await bcrypt.compare(password, user.password))) {

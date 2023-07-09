@@ -5,25 +5,20 @@ import { useAppSelector, useAppDispatch } from "../../src/app/hooks";
 import { registerUser } from "../../src/action/authAction";
 import { TypeRegisterData } from "../../src/action/actionType";
 
-const Registere = () => {
+const Register = () => {
   const [userdata, setuserdata] = useState<TypeRegisterData>({
     name: "",
     email: "",
     password: "",
-    repassword: "",
+    confirm: "",
   });
   const dispatch = useAppDispatch();
   const onchange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
     setuserdata({ ...userdata, [e.target.name]: e.target.value });
   };
   const onsubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log(userdata);
-
-    console.log("onSubmit");
-
-    dispatch(registerUser(userdata));
+    if (userdata.password === userdata.confirm) dispatch(registerUser(userdata));
   };
 
   return (
@@ -65,7 +60,7 @@ const Registere = () => {
           <div className="w-full m-6">
             <TextField
               className="w-full"
-              name="repassword"
+              name="confirm"
               type="password"
               id="outlined-basic"
               label="Re-password:"
@@ -82,4 +77,4 @@ const Registere = () => {
   );
 };
 
-export default Registere;
+export default Register;
