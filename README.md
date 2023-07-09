@@ -13,8 +13,11 @@
 
 ## Installation
 
-## Getting Start
+    npm install
+    cd client
+    npm install
 
+## Getting Start
     npm run dev
 
 ## Information for start
