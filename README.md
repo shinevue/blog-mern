@@ -1,5 +1,13 @@
 # BLOG APPLICATION
 
+## GET START
+
+    git clone https://github.com/shinevue/blog-mern.git
+    cd blog-mern
+    npm install
+    cd client
+    npm instll
+
 ## TECHNOLOGE
 
     React
